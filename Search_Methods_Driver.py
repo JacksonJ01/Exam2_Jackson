@@ -39,7 +39,7 @@ for i in range(0, 4):
     print("." * a)
     a += 1
     sleep(1)
-
+print("_" * 100)
 
 # This is loop that runs the whole program
 while choice == 'Start':
@@ -93,7 +93,7 @@ while choice == 'Start':
         # If the user tries to enter a string of a float, they will be butt hurt because they will fail.. unless they only press enter
         # The try statement is what allow the value checking
         amount = input('\nHow many random numbers would you like me to sort?'
-                       '\nDon\'t go too crazy... (don\'t press enter without entering a value, pls)'
+                       '\nDon\'t go too crazy...'
                        '\n>>>')
         while amount:
             try:
@@ -135,4 +135,6 @@ while choice == 'Start':
               '\nThere, you can try again, or you can exit the program.')
 
         lists.clear()  # The user might want to use try other methods
+        input('\n*PRESS ENTER*')
         sleep(1.5)  # Yes this is here on purpose
+        print("_" * 100)
